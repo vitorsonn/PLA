@@ -8,9 +8,6 @@ st.subheader("Álgebra Linear — Operações com Matrizes, Determinantes e Mét
 
 st.divider()
 
-# =====================================
-# SOMA DE MATRIZES
-# =====================================
 
 st.header("1) Soma de Matrizes")
 
@@ -62,9 +59,7 @@ print(resultado)
 
 st.divider()
 
-# =====================================
-# SUBTRAÇÃO
-# =====================================
+
 
 st.header("2) Subtração de Matrizes")
 
@@ -114,9 +109,7 @@ print(resultado)
 
 st.divider()
 
-# =====================================
-# ESCALAR
-# =====================================
+
 
 st.header("3) Multiplicação por Escalar")
 
@@ -155,9 +148,7 @@ print(resultado)
 
 st.divider()
 
-# =====================================
-# PRODUTO MATRIZES
-# =====================================
+
 
 st.header("4) Produto de Matrizes")
 
@@ -206,9 +197,7 @@ print(resultado)
 
 st.divider()
 
-# =====================================
-# DETERMINANTES
-# =====================================
+
 
 st.header("5) Determinantes")
 
@@ -226,7 +215,7 @@ st.write("Matriz:")
 st.write(A)
 
 st.write("Determinante:")
-st.success(resultado)
+st.success(round(resultado, 2))
 
 
 st.code('''
@@ -245,23 +234,23 @@ print(resultado)
 st.subheader("Determinante 3x3")
 
 A = np.array([
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
+    [4, 1, 2],
+    [4, 8, 7],
+    [1, 12, 9]
 ])
 
 resultado = np.linalg.det(A)
 
 st.write(A)
-st.success(resultado)
+st.success(round(resultado, 2))
 
 st.code('''
 import numpy as np
 
 A = np.array([
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
+    [4, 1, 2],
+    [4, 8, 7],
+    [1, 12, 9]
 ])
 
 resultado = np.linalg.det(A)
@@ -273,9 +262,7 @@ print(resultado)
 
 st.divider()
 
-# =====================================
-# GAUSS
-# =====================================
+
 
 st.header("6) Método de Gauss")
 
@@ -356,9 +343,6 @@ with aba3:
 
 st.divider()
 
-# =====================================
-# CONCLUSÃO
-# =====================================
 
 st.header("✅ Conclusão")
 
@@ -369,9 +353,7 @@ st.write(
 
 st.info("Projeto desenvolvido para apresentação acadêmica.")
 
-# =====================================
-# RODAR O PROJETO
-# =====================================
+
 
 st.sidebar.title("▶ Como Rodar")
 
